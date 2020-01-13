@@ -21,7 +21,6 @@ from gestionBD import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('usuarios/', views.UsuariosList.as_view()),
-    #path(r'^user/(?P<username>\w{0,50})/$', views.UsuariosDetalle.as_view(),),
     path('usuarios/<str:pk>/', views.UsuariosDetalle.as_view()),
     path('sector/', views.SectorList.as_view()),
     path('sector/<str:pk>/', views.SectorDetalle.as_view()),
