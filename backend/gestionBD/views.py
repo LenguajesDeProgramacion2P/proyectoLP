@@ -65,7 +65,7 @@ class SectorDetalle(APIView):
 
     def get_object(self, pk):
         try:
-            return sector.objects.get(idSigla=pk)
+            return sector.objects.get(nombre=pk)
         except sector.DoesNotExist:
             raise Http404
 
@@ -106,7 +106,7 @@ class NoticiaDetalle(APIView):
 
     def get_object(self, pk):
         try:
-            return noticiaTip.objects.get(tipoNoticia=pk)
+            return noticiaTip.objects.get(pk=pk)
         except noticiaTip.DoesNotExist:
             raise Http404
 
