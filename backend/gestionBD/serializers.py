@@ -4,7 +4,7 @@ from rest_framework import serializers
 class usuarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = usuario
-        fields = ('idUsuario','cedula','nombre','apellido','usuario','contrasena','email')
+        fields = ('idUsuario', 'nombre', 'apellido', 'usuario', 'contrasena','email')
 
 class sectorSerializer(serializers.ModelSerializer):
     class Meta:

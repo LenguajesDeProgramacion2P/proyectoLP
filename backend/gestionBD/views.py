@@ -106,7 +106,7 @@ class NoticiaDetalle(APIView):
 
     def get_object(self, pk):
         try:
-            return noticiaTip.objects.get(pk=pk)
+            return noticiaTip.objects.get(tipoNoticia=pk)
         except noticiaTip.DoesNotExist:
             raise Http404
 

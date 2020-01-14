@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 class usuario(models.Model):
     idUsuario = models.AutoField (primary_key = True, unique=True)
-    cedula = models.CharField(max_length=15, unique=True)
+    #cedula = models.CharField(max_length=15, unique=True)
     nombre = models.CharField(max_length=50)
     apellido = models.CharField(max_length=50)
     usuario = models.CharField(unique=True, max_length=25)
